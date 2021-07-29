@@ -1,7 +1,22 @@
-//se solicta el cliente de
+var Cliente = require("./cliente.js");
 
-var Cliente = require('./cliente');
+var cliente = new Cliente("localhost", "8080", "http");
 
-var clienteGithub = new Cliente('github.com','443','https');
+/*
+cliente.post("/animales/", {
+    nombre: "Luna",
+    especie: "perro"
+}, (respuesta) => console.log(respuesta));*/
 
-console.log(clienteGithub);
+// autenticar nuestro cliente con usuario y password validos
+/*clienteGitHub.autenticarBasic("jorgevgut", "");
+clienteGitHub.get("/users/jorgevgut", (respuesta) => {
+    console.log(respuesta);
+});*/
+
+
+/*clienteGitHub.post("/repos/jorgevgut/uuid/issues/2/comments", {
+        "body": "esta es otra prueba"
+    },
+    (respuesta) => console.log(respuesta));
+*/
