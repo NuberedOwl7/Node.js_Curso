@@ -10,6 +10,7 @@ class cliente {
     //realizar peticiones para obtener HTTP(opbtener informacion)
     
     //procesar headers par mantener abierta la sesión => (se realiza en la peticion o request)
+    //metodos de la clase 
     procesarHeaders(req){
 
         return req;
