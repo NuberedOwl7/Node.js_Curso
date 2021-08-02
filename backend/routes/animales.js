@@ -24,8 +24,15 @@ router.get('/', (req, res, next) => {
           req.session.animales= [];
       }
 
-      if (req.get('content-type')=="aplication/json")
+      /*if (req.get('content-type')=="aplication/json"){
+          console.log("validado");
 
+      }else {
+        res.status('403');  
+        res.send('ERROR');
+          
+      }*/
+      res.status(200);
       console.log(req.body);
       req.session.animales.push(req.body);
       res.send('Peticion recibida');

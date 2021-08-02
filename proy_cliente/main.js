@@ -1,12 +1,12 @@
 var Cliente = require("./cliente.js");
 
-var cliente = new Cliente("localhost", "8080", "http");
+var cliente = new Cliente("localhost", "3001", "http");
 
-/*
+//no funciona 
 cliente.post("/animales/", {
     nombre: "Luna",
     especie: "perro"
-}, (respuesta) => console.log(respuesta));*/
+}, (respuesta) => console.log(respuesta));
 
 // autenticar nuestro cliente con usuario y password validos
 /*clienteGitHub.autenticarBasic("jorgevgut", "");
